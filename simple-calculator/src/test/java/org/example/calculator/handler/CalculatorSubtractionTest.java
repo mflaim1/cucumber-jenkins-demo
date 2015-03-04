@@ -10,17 +10,17 @@ public class CalculatorSubtractionTest {
 
 	@Test
 	public void shouldSubtractTwoPositiveNumbers() {
-		assertTrue(calculatorHandler.makeSubtractionResponse(3F, 5F) == -2.0);
+		assertTrue(calculatorHandler.doSubtraction(3F, 5F) == -2.0);
 	}
 
 	@Test
 	public void shouldSubtractOnePositiveNumberAndZero() {
-		assertTrue(calculatorHandler.makeSubtractionResponse(3F, 0F) == 3.0);
+		assertTrue(calculatorHandler.doSubtraction(3F, 0F) == 3.0);
 	}
 
 	@Test
 	public void shouldSubtractZeroAndZero() {
-		assertTrue(calculatorHandler.makeSubtractionResponse(0F, 0F) == 0.0);
+		assertTrue(calculatorHandler.doSubtraction(0F, 0F) == 0.0);
 	}
 
 }

@@ -32,23 +32,22 @@ public class CalculatorSteps {
 
 	@When("^I do an? addition calculation$")
 	public void I_do_a_addition_calculation() throws Throwable {
-		result = calculatorHandler.makeAdditionResponse(operand1, operand2);
+		result = calculatorHandler.doAddition(operand1, operand2);
 	}
 
 	@When("^I do a subtraction calculation$")
 	public void I_do_a_subtraction_calculation() throws Throwable {
-		result = calculatorHandler.makeSubtractionResponse(operand1, operand2);
+		result = calculatorHandler.doSubtraction(operand1, operand2);
 	}
 
 	@When("^I do a multiplication calculation$")
 	public void I_do_a_multiplication_calculation() throws Throwable {
-		result = calculatorHandler.makeMultiplicationResponse(operand1,
-				operand2);
+		result = calculatorHandler.doMultiplication(operand1, operand2);
 	}
 
 	@When("^I do a division calculation$")
 	public void I_do_a_division_calculation() throws Throwable {
-		result = calculatorHandler.makeDivisionResponse(operand1, operand2);
+		result = calculatorHandler.doDivision(operand1, operand2);
 	}
 
 	@Then("^I expect the result \"([^\"]*)\"$")

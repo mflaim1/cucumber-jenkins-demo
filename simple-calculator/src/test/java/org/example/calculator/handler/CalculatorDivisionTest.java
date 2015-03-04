@@ -10,17 +10,17 @@ public class CalculatorDivisionTest {
 
 	@Test
 	public void shouldDivideTwoPositiveNumbers() {
-		assertTrue(calculatorHandler.makeDivisionResponse(15F, 5F) == 3.0);
+		assertTrue(calculatorHandler.doDivision(15F, 5F) == 3.0);
 	}
 
 	@Test
 	public void shouldAddOnePositiveNumberAndZero() {
-		assertTrue(calculatorHandler.makeDivisionResponse(0F, 6F) == 0.0);
+		assertTrue(calculatorHandler.doDivision(0F, 6F) == 0.0);
 	}
 
 	@Test
 	public void shouldAddZeroAndZero() {
-		assertTrue(calculatorHandler.makeDivisionResponse(10F, -2F) == -5.0);
+		assertTrue(calculatorHandler.doDivision(10F, -2F) == -5.0);
 	}
 
 }
