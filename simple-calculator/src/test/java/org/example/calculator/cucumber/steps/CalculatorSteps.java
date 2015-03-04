@@ -30,24 +30,24 @@ public class CalculatorSteps {
 		}
 	}
 
-	@When("^I run the addition calculation$")
-	public void I_run_the_addition_calculation() throws Throwable {
+	@When("^I do an? addition calculation$")
+	public void I_do_a_addition_calculation() throws Throwable {
 		result = calculatorHandler.makeAdditionResponse(operand1, operand2);
 	}
 
-	@When("^I run the subtraction calculation$")
-	public void I_run_the_subtraction_calculation() throws Throwable {
+	@When("^I do a subtraction calculation$")
+	public void I_do_a_subtraction_calculation() throws Throwable {
 		result = calculatorHandler.makeSubtractionResponse(operand1, operand2);
 	}
 
-	@When("^I run the multiplication calculation$")
-	public void I_run_the_multiplication_calculation() throws Throwable {
+	@When("^I do a multiplication calculation$")
+	public void I_do_a_multiplication_calculation() throws Throwable {
 		result = calculatorHandler.makeMultiplicationResponse(operand1,
 				operand2);
 	}
 
-	@When("^I run the division calculation$")
-	public void I_run_the_division_calculation() throws Throwable {
+	@When("^I do a division calculation$")
+	public void I_do_a_division_calculation() throws Throwable {
 		result = calculatorHandler.makeDivisionResponse(operand1, operand2);
 	}
 

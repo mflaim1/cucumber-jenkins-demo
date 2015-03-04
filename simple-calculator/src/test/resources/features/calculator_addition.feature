@@ -11,7 +11,7 @@ Given the following calculator input:
 | Operand 1 | Operand 2 |
 | 3         | 5         |
 
-When I run the addition calculation
+When I do an addition calculation
 
 Then I expect the result "8.0"
 
@@ -24,7 +24,7 @@ Given the following calculator input:
 | Operand 1 | Operand 2 |
 | 3         | 0         |
 
-When I run the addition calculation
+When I do an addition calculation
 
 Then I expect the result "3.0"
 
@@ -37,7 +37,7 @@ Given the following calculator input:
 | Operand 1 | Operand 2 |
 | 0         | 0         |
 
-When I run the addition calculation
+When I do an addition calculation
 
 Then I expect the result "0.0"
 
