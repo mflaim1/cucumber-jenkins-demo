@@ -12,14 +12,39 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <junit.version>4.11</junit.version>
+    <cucumber.version>1.1.5</cucumber.version>
   </properties>
 
   <dependencies>
+  
+  	<!-- JUnit Test Dependencies -->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.1</version>
+      <version>${junit.version}</version>
       <scope>test</scope>
     </dependency>
+    
+    <!-- Cucumber Test Dependencies -->
+ 	<dependency>
+		<groupId>info.cukes</groupId>
+		<artifactId>cucumber-core</artifactId>
+		<version>${cucumber.version}</version>
+		<scope>test</scope>
+	</dependency>
+ 	<dependency>
+		<groupId>info.cukes</groupId>
+		<artifactId>cucumber-junit</artifactId>
+		<version>${cucumber.version}</version>
+		<scope>test</scope>
+	</dependency>
+ 	<dependency>
+		<groupId>info.cukes</groupId>
+		<artifactId>cucumber-java</artifactId>
+		<version>${cucumber.version}</version>
+		<scope>test</scope>
+	</dependency>    
+    
   </dependencies>
 </project>
