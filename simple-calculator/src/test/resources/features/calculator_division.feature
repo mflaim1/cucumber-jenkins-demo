@@ -11,7 +11,7 @@ Given the following calculator input:
 | Operand 1 | Operand 2 |
 | 15        | 5         |
 
-When I get the division calculation
+When I run the division calculation
 
 Then I expect the result "3.0"
 
@@ -24,7 +24,7 @@ Given the following calculator input:
 | Operand 1 | Operand 2 |
 | 0         | 6         |
 
-When I get the division calculation
+When I run the division calculation
 
 Then I expect the result "0.0"
 
@@ -37,7 +37,7 @@ Given the following calculator input:
 | Operand 1 | Operand 2 |
 | 10        | -2        |
 
-When I get the division calculation
+When I run the division calculation
 
 Then I expect the result "-5.0"
 

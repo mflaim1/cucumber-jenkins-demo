@@ -11,7 +11,7 @@ Given the following calculator input:
 | Operand 1 | Operand 2 |
 | 3         | 5         |
 
-When I get the subtraction calculation
+When I run the subtraction calculation
 
 Then I expect the result "-2.0"
 
@@ -24,7 +24,7 @@ Given the following calculator input:
 | Operand 1 | Operand 2 |
 | 3         | 0         |
 
-When I get the subtraction calculation
+When I run the subtraction calculation
 
 Then I expect the result "3.0"
 
@@ -37,7 +37,7 @@ Given the following calculator input:
 | Operand 1 | Operand 2 |
 | 0         | 0         |
 
-When I get the subtraction calculation
+When I run the subtraction calculation
 
 Then I expect the result "0.0"
 
