@@ -13,7 +13,7 @@ Given the following calculator input:
 
 When I do an addition calculation
 
-Then I expect the result "8.0"
+Then I expect the result 8
 
 
 #====================================================================
@@ -26,7 +26,7 @@ Given the following calculator input:
 
 When I do an addition calculation
 
-Then I expect the result "3.0"
+Then I expect the result 3
 
 
 #====================================================================
@@ -39,5 +39,5 @@ Given the following calculator input:
 
 When I do an addition calculation
 
-Then I expect the result "0.0"
+Then I expect the result 0
 
