@@ -13,7 +13,7 @@ Given the following calculator input:
 
 When I do a multiplication calculation
 
-Then I expect the result "15.0"
+Then I expect the result 15
 
 
 #====================================================================
@@ -26,7 +26,7 @@ Given the following calculator input:
 
 When I do a multiplication calculation
 
-Then I expect the result "0.0"
+Then I expect the result 0
 
 
 #====================================================================
@@ -39,5 +39,5 @@ Given the following calculator input:
 
 When I do a multiplication calculation
 
-Then I expect the result "0.0"
+Then I expect the result 0
 
