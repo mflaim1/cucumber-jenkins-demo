@@ -11,7 +11,6 @@ node{
         mavenLocalRepo: '~/.m2/repository') {
  
       // Run the maven build
-        sh "cd /var/lib/jenkins/workspace/example-pipeline/simple-calculator"
 	sh "mvn clean install"
  
     } // withMaven will discover the generated Maven artifacts, JUnit Surefire & FailSafe & FindBugs reports...
