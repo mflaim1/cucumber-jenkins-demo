@@ -28,7 +28,12 @@ node{
         maven: 'M3',
         mavenSettingsConfig: 'd9ac0a9c-9530-4215-bafb-017b0409f02e',
         mavenLocalRepo: '~/.m2/repository') {
-        sh "./deliver.sh"
+        sh "mvn jar:jar install:install help:evaluate -Dexpression=project.name
+"
+sh"NAME=`mvn help:evaluate -Dexpression=project.name | grep "^[^\[]"`"
+sh"VERSION=`mvn help:evaluate -Dexpression=project.version | grep "^[^\[]"`
+"
+sh"java -jar target/${NAME}-${VERSION}.jar"
 
     }
 
