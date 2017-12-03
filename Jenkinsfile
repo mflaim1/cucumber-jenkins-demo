@@ -1,35 +1,38 @@
-node{
-  stage ('Build') {
+pipeline{
+  agent any
+  tools {
+    maven 'Maven 3.3.9'
+    jdk 'jdk8'
 
-   checkout scm
-    withMaven(
-        maven: 'M3',
-        mavenSettingsConfig: 'd9ac0a9c-9530-4215-bafb-017b0409f02e',
-        mavenLocalRepo: '~/.m2/repository') {
- 	      sh "mvn -B -DskipTests clean package"
-
-    }
   }
+  stages{
+    stage ('Initialize'){
+      steps{
+        sh '''
+          echo "PATH=${PATH}"
+          echo "M2_HOME=${M2_HOME}"
+          '''
+      }
+    }
+    stage ('Build') {
+      steps{
+        sh "mvn -B -DskipTests clean package"
 
-  stage ('Test') {
+      }
+    }
 
-   checkout scm
-    withMaven(
-        maven: 'M3',
-        mavenSettingsConfig: 'd9ac0a9c-9530-4215-bafb-017b0409f02e',
-        mavenLocalRepo: '~/.m2/repository') {
+    stage ('Test') {
+      steps{
         sh "mvn test"
 
+      }
     }
-  }
 
-  stage('Deliver'){
-    withMaven(
-        maven: 'M3',
-        mavenSettingsConfig: 'd9ac0a9c-9530-4215-bafb-017b0409f02e',
-        mavenLocalRepo: '~/.m2/repository') {
+    stage('Deliver'){
+      steps{
         sh "mvn jar:jar install:install"
-    }
 
+      }
+    }
   }
 }
