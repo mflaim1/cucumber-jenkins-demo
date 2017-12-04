@@ -47,10 +47,7 @@ public class CalculatorSteps {
 		result = calculatorHandler.doMultiplication(operand1, operand2);
 	}
 
-	@When("^I do a division calculation$")
-	public void I_do_a_division_calculation() throws Throwable {
-		result = calculatorHandler.doDivision(operand1, operand2);
-	}
+	//TO DO - division step
 
 	@Then("^I expect the result (-?\\d+)$")
 	public void I_expect_the_result(int expectedResult) throws Throwable {

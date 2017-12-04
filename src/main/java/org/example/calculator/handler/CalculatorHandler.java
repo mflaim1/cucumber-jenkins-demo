@@ -17,9 +17,6 @@ public class CalculatorHandler {
 		return result;
 	}
 
-	public int doDivision(int operand1, int operand2) {
-		int result = operand1 / operand2;
-		return result;
-	}
+	// TO DO - doDivision
 
 }
